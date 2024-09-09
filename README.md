@@ -7,12 +7,12 @@ It works with WebGL,but you can make it work with SVG and CSS but those two are 
 * JavaScript Library
 * MIT License
 * Right about WebGL
-*Created by Ricardo Cabello , aka Mr.Doob
+* Created by Ricardo Cabello , aka Mr.Doob
 
 # What is WebGL ?
 
 * JavaScript API
 * Randers triangles at a  remarkable speed
 * Result can be drawn in a <Canvas>
-*Compatible with most Modern browsers
+* Compatible with most Modern browsers
 * Uses the Graphics Processing Unit (GPU)
