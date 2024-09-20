@@ -16,3 +16,19 @@ It works with WebGL,but you can make it work with SVG and CSS but those two are 
 * Result can be drawn in a <Canvas>
 * Compatible with most Modern browsers
 * Uses the Graphics Processing Unit (GPU)
+
+# Treansform Object
+
+* Position - Position has 3 Properties
+<ul>
+    <li>X</li>
+    <li>Y</li>
+    <li>Z</li>
+</ul>
+
+* Scale - Scale has 3 Properties
+<ul>
+    <li>X</li>
+    <li>Y</li>
+    <li>Z</li>
+</ul>
