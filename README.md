@@ -32,3 +32,6 @@ It works with WebGL,but you can make it work with SVG and CSS but those two are 
     <li>Y</li>
     <li>Z</li>
 </ul>
+
+# Animations
+
