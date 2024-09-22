@@ -24,24 +24,30 @@ group.add(cubeA);
 renderer.render(scene,camera);
 
 // Time
-let time = Date.now();
+// let time = Date.now();
+// or
+// Clock Mehord in THREE JS
+const time = new THREE.Clock();
+
 
 // Animation
 
 const animate = () => {
 
     // All System are same Animaiton by using time factgor
-    const currentTime = Date.now()
-    const datltaTime = currentTime - time;
-    time = currentTime;
-    
+    // const currentTime = Date.now()
+    // const datltaTime = currentTime - time;
+    // time = currentTime;
 
+    // Another Method
+    const elapseTime = time.getElapsedTime();
+    cubeA.rotation.y = elapseTime;
     // console.log("animate");
     // cubeA.position.x += 0.01;
     // cubeA.position.y += 0.01;
     // cubeA.position.z += 0.01;
     // cubeA.rotation.x += 0.002 * datltaTime;
-    cubeA.rotation.y += 0.002 * datltaTime;
+    // cubeA.rotation.y += 0.002 ;
     // cubeA.rotation.z += 0.01;
 //    cubeA.scale.x += 0.01;
 //    cubeA.scale.y += 0.01;
