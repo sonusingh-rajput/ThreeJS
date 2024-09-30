@@ -1,5 +1,6 @@
 import * as THREE from 'three';
-
+import gsap from 'gsap';
+console.log(gsap)
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75,window.innerWidth / window.innerHeight,0.1,1000);
 camera.position.z = 5;
@@ -27,31 +28,27 @@ renderer.render(scene,camera);
 // let time = Date.now();
 // or
 // Clock Mehord in THREE JS
-const time = new THREE.Clock();
+// const time = new THREE.Clock();
 
 
 // Animation
 
+// Using GSAP
+gsap.to(cubeA.position,{duration:2,delay:1,x:8});
+gsap.to(cubeA.position,{duration:2,delay:3,x:0});
+
 const animate = () => {
 
-    // All System are same Animaiton by using time factgor
-    // const currentTime = Date.now()
-    // const datltaTime = currentTime - time;
-    // time = currentTime;
-
-    // Another Method
-    const elapseTime = time.getElapsedTime();
-    cubeA.rotation.y = elapseTime;
-    // console.log("animate");
-    // cubeA.position.x += 0.01;
-    // cubeA.position.y += 0.01;
-    // cubeA.position.z += 0.01;
-    // cubeA.rotation.x += 0.002 * datltaTime;
-    // cubeA.rotation.y += 0.002 ;
-    // cubeA.rotation.z += 0.01;
-//    cubeA.scale.x += 0.01;
-//    cubeA.scale.y += 0.01;
-// cubeA.scale.z += 0.01;
+    
+    // const elapseTime = time.getElapsedTime();
+    // cubeA.position.y = elapseTime;
+    // cubeA.position.x = Math.sin(elapseTime * 0.5);
+    // cubeA.position.y = Math.cos(elapseTime);
+    // camera.position.y = Math.sin(elapseTime);
+    // camera.position.x = Math.sin(elapseTime);
+    // camera.lookAt(group.position)
+    
+   
     renderer.render(scene,camera)
     window.requestAnimationFrame(animate);
 }
